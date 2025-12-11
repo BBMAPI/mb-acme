@@ -2,5 +2,5 @@
 ACME
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/BBMAPI/mbx-scripts/main/acme.sh)
+bash <(curl -Ls https://github.com/BBMAPI/mb-acme.git)
 ```
