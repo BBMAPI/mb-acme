@@ -42,7 +42,7 @@ v6=$(curl -s6m5 icanhazip.com -k)
 }
 
 if [ ! -f acyg_update ]; then
-green "首次安装MBX脚本必要的依赖……"
+green "首次安装MB脚本必要的依赖……"
 if [[ x"${release}" == x"alpine" ]]; then
 apk add wget curl tar jq tzdata openssl expect git socat iproute2 virt-what
 else
@@ -447,11 +447,6 @@ echo -e "${cyan} ██  ██  ██ ██   ██ ${plain}"
 echo -e "${cyan} ██      ██ ██████  ${plain}"
 echo -e "${green}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${plain}"
 yellow "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" 
-yellow "提示："
-yellow "一、脚本不支持多IP的VPS，SSH登录的IP与VPS共网IP必须一致"
-yellow "二、80端口模式仅支持单域名证书申请，在80端口不被占用的情况下支持自动续期"
-yellow "三、DNS API模式不支持freenom免费域名申请，支持单域名与泛域名证书申请，无条件自动续期"
-yellow "四、泛域名申请前须设置一个名称为 * 字符的解析记录 (输入格式：*.一级/二级主域)"
 yellow "公钥文件crt保存路径：/root/mbca/cert.crt"
 yellow "密钥文件key保存路径：/root/mbca/private.key"
 echo
