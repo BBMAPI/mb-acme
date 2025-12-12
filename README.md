@@ -6,6 +6,6 @@ ACME
 bash <(curl -Ls https://raw.githubusercontent.com/BBMAPI/mb-acme/main/acme.sh)
 ```
 或
-···
+```
 bash <(wget -qO- https://raw.githubusercontent.com/BBMAPI/mb-acme/main/acme.sh)
-···
+```
